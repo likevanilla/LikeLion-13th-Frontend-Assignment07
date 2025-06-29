@@ -4,7 +4,7 @@ export const Container = styled.div`
   max-width: 600px;
   margin: 40px auto;
   padding: 24px;
-  background-color: #ffffff;
+  background-color: white;
   border-radius: 16px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 `;
@@ -21,14 +21,14 @@ export const Title = styled.h1`
 
 export const Sub = styled.p`
   font-size: 15px;
-  color: #555;
+  color: gray;
 `;
 
 export const DateInputWrapper = styled.div`
   margin-bottom: 25px;
 
   label {
-    font-weight: 500;
+    font-weight: bold;
     margin-right: 10px;
   }
 `;
@@ -45,14 +45,6 @@ export const DateInput = styled.input`
   }
 `;
 
-export const FetchMessage = styled.span`
-  margin-left: 12px;
-  color: #888;
-  font-size: 13px;
-`;
-
-export const Content = styled.section``;
-
 export const MealList = styled.ul`
   list-style: none;
   padding: 0;
@@ -60,14 +52,26 @@ export const MealList = styled.ul`
 `;
 
 export const MealItem = styled.li`
-  background-color: #f5f5f5;
+  background-color: whitesmoke;
   padding: 12px 16px;
   border-radius: 10px;
   margin-bottom: 8px;
   font-size: 15px;
 `;
 
+export const NtrItem = styled.li``;
+
 export const Message = styled.p`
-  color: ${(props) => (props.error ? "#e53935" : "#333")};
+  color: #333;
   font-size: 14px;
+  justify-items: center;
+`;
+
+export const ErrorMessage = styled.p`
+  color: red;
+  font-size: 14px;
+`;
+
+export const Section = styled.section`
+  flex-direction: column;
 `;
